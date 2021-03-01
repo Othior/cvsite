@@ -1,0 +1,275 @@
+/* Header */
+.content_header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.photo_moi {
+    margin: auto;
+}
+.photo_moi > img {
+    border-radius:5px;
+    max-height: 12rem;
+}
+.marge_gauche{
+    background-color: #5569DC;
+    width: 30vw;
+}
+.fonction_adresse > h2 {
+    font-weight: bold;
+}
+.image_droite {
+    width: 75vw;
+    height: 70vh;
+}
+.image_droite_img{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+}
+.content_image{
+    position: absolute;
+    top: 30rem;
+    right: 5rem;
+}
+.content_image > h2,.content_image > p{
+    font-size: 3em;
+    text-align: left;
+    color: white;
+}
+.content{
+    margin: auto;
+    width: 50%;
+}
+.fonction_adresse{
+    color: white;
+}
+.fonction_adresse > p , .fonction_adresse > h3{
+    margin:0;
+}
+.fonction_adresse > h3 {
+    margin-bottom: 10px;
+}
+.fonction_adresse > p , .tel{
+    font-size: 20px;
+}
+.coordonees{
+    color: white;
+}
+.mail{
+    font-size: 15px;
+}
+.tel,.mail{
+    margin: 0;
+}
+
+.reseau_sociaux{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.reseau_sociaux > li > a > img{
+    width: 2rem;
+    height: 2rem;
+}
+.btn_download_cv > button{
+    border: none;
+    padding: 1rem 3rem;
+    color: #5569DC;
+    font-weight: bold;
+}
+.btn_download_cv,.reseau_sociaux,.fonction_adresse,.coordonees{
+    margin-top: 2rem;
+}
+button{
+    font-size: 15px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* mon Parcours */
+
+.parcours {
+    background: #EDF0FC;
+    color: #5569DC;
+    height: 55vh;
+}
+.content_parcours > h2  {
+    margin: 0;
+    padding: 6rem 0rem;
+    font-family: "Segoe UI";
+    font-style: oblique;
+}
+.description {
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 25px;
+}
+.formation_etude , .content_competence , .content_parcours , .title_competence{
+    width: 60vw;
+    margin: auto;
+    
+}
+/* Etude et formation */
+.formation_etude{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.etudes > h2 , .experiences > h2 , .title_competence , .content_parcours > h2{
+    color: #5569DC;
+    font-size: 35px;
+}
+.formation{
+    margin-top: 4rem;
+    font-size: 25px;
+}
+/* .description_etude{
+    width: 25rem;
+} */
+.description_etude , .description_exp , .gauche , .droite{
+    font-size: 20px;
+    width: 25rem;
+}
+.date_etude , .date_exp{
+    font-weight: bold;
+    font-size: 20px;
+}
+.description_etude , .description_exp{
+    font-style: italic;
+}
+/* Competence */
+.competences{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.content_competence{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin: auto;
+}
+.title_competence{
+    /* margin-left: 17rem; */
+    margin-top: 6rem;
+    font-size: 35px;
+}
+.backend > img , .langage_db > img , .frontend > img  , .methodo > img {
+    width: 2rem;
+    height: 2rem;
+}
+.backend:nth-child(5) > p ,.backend:nth-child(2) > p ,.backend:nth-child(3) > p{
+    margin-left: 2rem;
+}
+.backend:nth-child(4) > img,.backend:nth-child(6) > img{
+    width: 3rem;
+    height: 2rem;
+}
+.langage_db > img{
+    width: 3rem;
+    height: 2rem;
+}
+.langage_db:nth-last-child(2) > img{
+    width: 3rem;
+    height: 3rem;
+}
+.langage_db:nth-last-child(2) > p{
+    margin-top: 1rem;
+}
+.backend , .langage_db , .frontend , .methodo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    margin-top: 3rem;
+}
+.backend > p , .langage_db > p , .frontend > p  , .methodo > p {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 25px;
+    
+}
+.competences{
+    margin-bottom: 8rem;
+}
+.droite{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.blockBackend > h2 , .blockFrontend > h2 ,.blockDb > h2{
+    font-size: 2em;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px){
+    .content_header{
+        flex-direction: column;
+        height: auto;
+    }
+    .marge_gauche{
+        width: 100%;
+        padding-bottom: 5rem;
+        height: 80vh;
+    }
+    .content_image{
+        display: none;
+    }
+    .image_droite{
+        width: 100%;
+        height: 70vh;
+        opacity: 1;
+    }
+    .parcours{
+        height: 70vh;
+    }
+    .content_parcours{
+        margin: auto;
+        width: 70%;
+    }
+    .content_parcours > h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .description{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .etudes,.experiences{
+        width: 100%;
+    }
+    .etudes > h2 , .experiences > h2 , .title_competence{
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    .formation,.gauche,.droite{
+        width: 70%;
+        margin: auto;
+    }
+    .description_etude,.description_exp,.backend,.frontend,.langage_db{
+        width: 100%;
+    }
+    .title_competence{
+        margin:30px 0px;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .content_competence{
+        flex-direction: column;
+    }
+}
+
+

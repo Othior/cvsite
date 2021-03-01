@@ -1,0 +1,92 @@
+<div class="content_header">
+    <div class="marge_gauche">
+        <div class="content" >
+            <div class="photo_moi">
+                <img src="../../assets/imagecv.png" alt="imagecv">
+            </div>
+            <div class="fonction_adresse">
+                <h2> {{ personne.Nom }} {{ personne.Prenom }} </h2>
+                <h3> {{ personne.Role }} </h3>
+                <p> {{ personne.Adresse }} </p>
+            </div>
+            <div class="coordonees">
+                <a class ="mail" target="_blank" href="mailto:{{ personne.Mail }}"> {{ personne.Mail }} </a>
+                <p class="tel" > Tél : {{ personne.Tel }} </p>
+            </div>
+            <ul class="reseau_sociaux">
+                <li *ngFor="let item_reseau of list_reseau">
+                    <a class="item_reseau" target="_blank" href="{{ item_reseau.content }}"><img src="{{ item_reseau.image }}" alt="github"></a>
+                </li>
+            </ul>
+            <div class="btn_download_cv">
+                <button>Télécharger CV</button>
+            </div>
+        </div>
+    </div>
+    <div class="image_droite">
+        <img class="image_droite_img" src="../../assets/fond_header.jpg" alt="fond_header">
+        <div class="content_image">
+            <h2> {{ personne.Nom }} {{ personne.Prenom }} </h2>
+            <p> {{ personne.Role }} </p>
+        </div>
+    </div>
+    
+</div>
+<div class="parcours">
+    <div class="content_parcours">
+        <h2>Mon parcours</h2>
+        <p class="description">
+            Passionné par l'informatique j'ai décidé de suivre des études de technicien informatique.
+            Par la suite j'ai complété mes études pour suivre une formation en programmation que  j'ai
+            tout de suite adoré et je me suis tout naturellement penché sur le métier du développeur 
+            / web designer car j'aime beaucoup l'art graphique.
+            Aujourd’hui , je développe une vraie passion pour la création de sites web.
+            Je dirais que c'est comme mon rêve d'enfant qui se réalise.
+        </p>
+    </div>
+</div>
+
+<div class="formation_etude">
+    <div class="etudes">
+        <h2>Etudes</h2>
+        <div class="formation" *ngFor="let etude of this.list_etudes" >
+            <p class="date_etude">{{ etude.date }}</p>
+            <p class="description_etude" >{{ etude.intituler }}</p>
+        </div>
+    </div>
+    <div class="experiences">
+        <h2>Experiences</h2>
+        <div class="formation" *ngFor="let exp of list_experiences">
+            <p class="date_exp">{{ exp.date }}</p>
+            <p class="description_exp">{{ exp.intituler }}</p>
+        </div>
+    </div>
+</div>
+<div class="competences">
+    <h2 class="title_competence">Compétences</h2>
+    <div class="content_competence">
+            <div class="blockBackend">
+                <h2>Backend</h2>
+                <div class="backend" *ngFor="let back of list_backend">
+                    <img src="{{ back.image }}" alt="{{back.image}}">
+                    <p>{{ back.content }}</p>
+                </div>
+            </div>
+            <div class="blockFrontend">
+                <h2>Frontend</h2>
+                <div class="frontend" *ngFor="let front of list_frontend"> 
+                    <img src="{{front.image}}" alt="{{front.image}}">
+                    <p>{{ front.content }}</p>
+                </div>
+            </div>
+            <div class="blockDb">
+                <h2 class="title_langagedb">Langage DB</h2>
+                <div class="langage_db" *ngFor="let langage of list_langageDb">
+                    <img src="{{langage.image}}" alt="{{langage.image}}">
+                    <p>{{ langage.content }}</p>
+                </div>
+            </div>
+            
+    </div>
+</div>
+

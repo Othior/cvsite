@@ -1,0 +1,8 @@
+<header>
+    <nav>
+        <ul >
+            <li *ngFor="let content of list_navbar"><a routerLink="{{content.link}}"> {{ content.items }}</a></li>
+        </ul>
+    </nav>
+</header>
+<router-outlet></router-outlet>

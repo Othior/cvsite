@@ -1,0 +1,8 @@
+<h1>Mes Projets</h1>
+
+<div class="container">
+    <div class="projet_block" *ngFor="let item of projet">
+        <h2 class="title_projet"> {{ item.nom }} </h2>
+        <a href="{{ item.lien }}" target="_blank" ><img src="{{ item.image }}" alt="" class="img_projet"></a>
+    </div>
+</div>

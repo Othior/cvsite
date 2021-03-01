@@ -1,0 +1,30 @@
+<footer>
+    <div class="content_footer">
+        <div class="description_personne">
+            <div class="personne">
+                <p> {{ personne.Role }} </p>
+                <p> {{ personne.Adresse }} </p>
+            </div>
+            
+            <div class="btn_download_cv_footer">
+                <button>Télécharger CV</button>
+            </div>
+        </div>
+    
+        <div class="contact_me">
+            <div class="coordonees_footer">
+                <a href="mailto:{{personne.Mail}}"> {{personne.Mail}} </a>
+                <p> Tél :{{ personne.Tel }} </p>
+            </div>
+            <!-- <div class="reseau_sociaux" >
+                <ul>
+                    <li *ngFor="let reseau of list_reseaux">
+                        <a href="{{ reseau.content }}" target="_blank">
+                            <img src="{{ reseau.image }}" alt="{{ reseau.image }}">
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</footer>

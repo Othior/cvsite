@@ -1,0 +1,100 @@
+footer{
+    background: #EDF0FC;
+}
+.content_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #EDF0FC;
+    margin: auto;
+    width: 60vw;
+    height: 35vh;
+    font-size: 25px;
+}
+.description_personne,.contact_me{
+    padding: 3rem 0rem;
+}
+.reseau_sociaux > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.reseau_sociaux > ul :first-child{
+    margin-right: 10px;
+}
+.reseau_sociaux > ul > li > a > img{
+    width: 2rem;
+    height: 2rem;
+}
+.reseau_sociaux > ul > li{
+    margin: 0;
+}
+li{
+    list-style: none;
+    font-style: italic;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+.btn_download_cv_footer > button{
+    padding: 1rem 4rem;
+    background:#5569DC;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+.reseau_sociaux{
+    margin-top: 1rem;
+}
+.reseau_sociaux ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reseau_sociaux ul li a img {
+    width: 3rem;
+    height: 3rem;
+}
+.btn_download_cv_footer{
+    margin-top: 2rem;
+    font-size: 25px;
+}
+.contact_me{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+.description_personne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.coordonees_footer{
+    text-align: right;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 640px){
+    footer{
+        height: 50vh;
+        flex-direction: column;
+        display: block;
+    }
+    .description_personne{
+        width: 70%;
+        margin: auto;
+    }
+    .personne > p , .contact_me{
+        width: 100%;
+        text-align: center;
+    }
+}
