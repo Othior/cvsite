@@ -1,29 +1,48 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'Header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent{
+export class HeaderComponent {
 
-  constructor() { this.addListNavbar(); }
+  private isClicked: boolean = false;
 
-  list_navbar: Array<Navbar>;
+  constructor() { }
 
-  addListNavbar(){
-    this.list_navbar = [
-      new Navbar("Acceuil",""),
-      new Navbar("Projet","projet"),
-      new Navbar("Contact","contact"),
-    ]
+  navbarBtn(){
+    this.isClicked = !this.isClicked;
+    let check = document.querySelector("#check").classList;
+
+    if(this.isClicked){
+      console.log('vrai ?' , this.isClicked)
+      check.add("active")
+      console.log('check ?' , check)
+      
+    }
+    else{
+      check.remove("active")
+      console.log('faux ?' , this.isClicked)
+    }
   }
+
+  list_navbar: Array<Navbar> =  [
+    {
+      items: "Acceuil",
+      link: ""
+    },
+    {
+      items: "Projet",
+      link: "projet"
+    },
+    {
+      items: "Contact",
+      link: "contact"
+    }
+  ];
 }
-class Navbar{
-  public items:string;
-  public link:string;
-  constructor(items:string,link:string){
-    this.items = items;
-    this.link = link;
-  }
+export interface Navbar {
+  items: string,
+  link: string
 }

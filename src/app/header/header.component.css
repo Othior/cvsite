@@ -1,15 +1,17 @@
-header{
+/* header{
+    display: none;
+} */
+nav{
     background-color: #5569DC;
     padding: 1rem;
     color: white;
     position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.4);
 }
-nav > ul{
-    display: flex;
-    justify-content: space-evenly;
+.burger{
+    display: none;
 }
 li{
     list-style: none;
@@ -24,8 +26,58 @@ a{
 nav > ul > li > a:hover {
     color: grey;
 }
+
+.active {
+    display: flex;
+    z-index: 10;
+}
+
+
+.nav-item {
+    background-color: #5569DC;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+ul {
+    display: flex;
+}
+ul li ,.link{
+    width: 10vw;
+}
+
 @media screen and (min-width: 200px) and (max-width: 640px){
-    header{
+    
+    #check{
         display: none;
+        position: absolute;
+        left: 0px;
+        padding: 0;
+        margin: 0;
+        top:50px;
+        width: 100vw;
+        height: 100vh;
+        border-top: 1px solid black;
+        background-color: #5569DC;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    #check li{
+        margin: 1rem 0rem;
+        font-size: 2em;
+    }
+    nav {
+        flex-direction: row-reverse;
+    }
+    .burger{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

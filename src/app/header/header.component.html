@@ -1,8 +1,20 @@
 <header>
     <nav>
-        <ul >
-            <li *ngFor="let content of list_navbar"><a routerLink="{{content.link}}"> {{ content.items }}</a></li>
-        </ul>
+        <div class="burger">
+            <div class="checkbtn" class="checkbtn" (click)="navbarBtn()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-item" >
+            <span>
+                Splingaire Marvyn
+            </span>
+            <ul id="check">
+                <li *ngFor="let content of list_navbar">
+                    <a class="link" routerLink="{{content.link}}"> {{ content.items }}</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
 <router-outlet></router-outlet>

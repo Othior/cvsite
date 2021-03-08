@@ -18,7 +18,7 @@ export class HomeComponent  {
   list_frontend : Array<ElementImageContent> = list_frontend;
   list_langageDb : Array<ElementImageContent> = list_langageDb;
   list_experiences : Array<Formation> = list_experiences;
-  list_etudes : Array<Formation> = list_etudes ;
+  list_etudes : Array<Formation> = list_etudes;
 
 }
 

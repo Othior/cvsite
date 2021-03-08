@@ -9,7 +9,7 @@
 }
 .photo_moi > img {
     border-radius:5px;
-    max-height: 12rem;
+    /* max-height: 12rem; */
 }
 .marge_gauche{
     background-color: #5569DC;
@@ -25,7 +25,7 @@
 .image_droite_img{
     position: relative;
     height: 70vh;
-    width: 100%;
+    width: 100vw;
     opacity: 0.7;
 }
 .content_image{
@@ -64,13 +64,11 @@
     margin: 0;
 }
 
-.reseau_sociaux{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0;
+/* .reseau_sociaux{
+    
+    margin: 0rem 1rem;
     padding: 0;
-}
+} */
 .reseau_sociaux > li > a > img{
     width: 2rem;
     height: 2rem;
@@ -94,75 +92,157 @@ a{
     text-decoration: none;
     color: white;
 }
-/* mon Parcours */
 
-.parcours {
-    background: #EDF0FC;
-    color: #5569DC;
-    height: 55vh;
+/*------------------------------------------------------------- new design header ------------------------------------------------------------ */
+.content_me{
+    height: 100vh;
+    background-color: #5569DC;
 }
-.content_parcours > h2  {
+.contenu{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 2fr 1fr 3fr 5%;
+    grid-template-rows: 100px 3fr 2fr 100px 100px;
+    align-items: center;
+    justify-content: center;
+}
+.reseau_sociaux svg{
+    width: 2rem;
+    height: 2rem;
+    color: #EDF0FC;
+}
+.photo_moi{
+    grid-column: 4/6;
+    grid-row: 2/3;
+}
+.photo_moi svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fonction_adresse{
+    grid-row: 2;
+    grid-column: 2/3;
+    font-size: 25px;
+}
+.role_me{
+    font-size:2em;
+    font-weight: bold;
+    font-style: italic;
+}
+.adresse_me{
+    font-size: 25px;
+    font-style: italic;
+}
+.firstname_lastname{
+    font-size:3em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.btn_download_cv{
+    font-size: 25px;
+}
+.reseau_sociaux{
     margin: 0;
-    padding: 6rem 0rem;
+    grid-row: 4;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+.reseau_sociaux .reseau_sociaux_list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}.reseau_sociaux_list li {
+    margin: 0rem 1rem;
+    
+}
+.reseau_sociaux div {
+    font-size: 30px;
+    margin-top: -7px;
+    margin-right: 2rem;
+}
+
+/* ------------------------------------------------------------ grid test ---------------------------------------------------------------------*/
+.parcours , .formation_etude , .competences {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 20%;
+}
+/* --------------------------------- Mon parcous -------------------------- */
+
+.parcours{
+    background-color: #EDF0FC;
+    color: #5569DC;
+    grid-template-rows: 5rem 1fr;
+    padding: 3rem 0rem;
+}
+.parcours h2 {
+    grid-row: 1;
+    grid-column: 2/4;
+    margin: 0;
     font-family: "Segoe UI";
     font-style: oblique;
+    font-size: 35px;
 }
-.description {
+.description{
+    grid-row: 2;
+    grid-column: 2/4;
     font-style: italic;
     font-weight: bold;
     text-align: justify;
     font-size: 25px;
 }
-.formation_etude , .content_competence , .content_parcours , .title_competence{
-    width: 60vw;
-    margin: auto;
-    
-}
-/* Etude et formation */
-.formation_etude{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-}
+/* ------------------------------------------------------------------------ */
+/* -------------------------- Etude et formation -------------------------- */
 .etudes > h2 , .experiences > h2 , .title_competence , .content_parcours > h2{
     color: #5569DC;
     font-size: 35px;
 }
 .formation{
-    margin-top: 4rem;
     font-size: 25px;
 }
-/* .description_etude{
-    width: 25rem;
-} */
-.description_etude , .description_exp , .gauche , .droite{
-    font-size: 20px;
-    width: 25rem;
+.formation_etude{
+    grid-template-rows: 5rem 1fr;
+    margin-top: 2rem;
+}
+.etudes{
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+.experiences{
+    grid-row: 1/3;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.blockBackend > h2 , .blockFrontend > h2 ,.blockDb > h2{
+    font-size: 2em;
+}
+.title_experience{
+    text-align: left;
+}
+.description_etude , .description_exp{
+    font-style: italic;
 }
 .date_etude , .date_exp{
     font-weight: bold;
     font-size: 20px;
 }
-.description_etude , .description_exp{
-    font-style: italic;
+.description_etude , .description_exp , .gauche , .droite{
+    font-size: 20px;
+    width: 25rem;
 }
-/* Competence */
-.competences{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-.content_competence{
-    display: flex;
-    justify-content: space-between;
-    width: 60vw;
-    margin: auto;
-}
-.title_competence{
-    /* margin-left: 17rem; */
-    margin-top: 6rem;
-    font-size: 35px;
+
+.backend > p , .langage_db > p , .frontend > p  , .methodo > p {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 25px;
 }
 .backend > img , .langage_db > img , .frontend > img  , .methodo > img {
     width: 2rem;
@@ -186,32 +266,56 @@ a{
 .langage_db:nth-last-child(2) > p{
     margin-top: 1rem;
 }
-.backend , .langage_db , .frontend , .methodo {
+/* ------------------------------------------------------------------------ */
+/* ----------------------------- Competences ------------------------------ */
+.competences{
+    grid-template-rows: 5rem  5rem 1fr 5rem 1fr;
+    /* grid-gap: 10px; */
+}
+.title_competence{
+    grid-row: 0;
+    grid-column: 2/3;
+    font-size: 35px;
+}
+.blockBackend{
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+.blockFrontend{
+    grid-row: 2/4;
+    grid-column: 3/4;
+    text-align: end;
+    
+}
+.frontend{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+}
+.frontend > p {
+    margin-right: 1rem;
+}
+.blockDb{
+    grid-row: 4/5;
+    grid-column: 2/4;
+}
+.title_frontend{
+    
+}
+.backend , .langage_db {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 0;
     margin-top: 3rem;
 }
-.backend > p , .langage_db > p , .frontend > p  , .methodo > p {
-    margin: 0;
-    margin-left: 1rem;
-    font-size: 25px;
-    
+.title_langagedb{
+    margin-top: 3rem;
 }
-.competences{
-    margin-bottom: 8rem;
-}
-.droite{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: column;
-}
+/* ------------------------------------------------------------------------ */
 
-.blockBackend > h2 , .blockFrontend > h2 ,.blockDb > h2{
-    font-size: 2em;
-}
 
 @media screen and (min-width: 200px) and (max-width: 640px){
     .content_header{
