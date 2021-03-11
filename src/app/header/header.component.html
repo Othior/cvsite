@@ -4,12 +4,13 @@
             Splingaire Marvyn
         </span>
         <div class="burger">
-            <div class="checkbtn" class="checkbtn" (click)="navbarBtn()">
+            <input type="checkbox" id="check"/>
+            <div class="checkbtn" for="#check" (click)="navbarBtn()">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
         <div class="nav-item">
-            <ul id="check">
+            <ul id="checkList">
                 <li *ngFor="let content of list_navbar">
                     <a class="link" routerLink="{{content.link}}"> {{ content.items }}</a>
                 </li>
@@ -17,4 +18,3 @@
         </div>
     </nav>
 </header>
-<router-outlet></router-outlet>
