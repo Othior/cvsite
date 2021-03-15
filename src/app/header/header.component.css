@@ -34,7 +34,6 @@ nav > ul > li > a:hover {
 }
 
 .active {
-    display: block;
     z-index: 10;
 }
 
@@ -58,6 +57,7 @@ ul li ,.link{
     .active{
         left: 0;
     }
+
     ul{
         flex-direction: column;
         align-items: center;
@@ -67,10 +67,10 @@ ul li ,.link{
         height: 100vh;
         border-top: 1px solid white;
         background-color: #5569DC;
-        top: 50px;
+        top: 56px;
         left: -100%;
         text-align: center;
-        transition: all .5s;
+        transition: all 0.5s;
         font-size: 25px;
     }
     #checkList li{
@@ -98,13 +98,13 @@ ul li ,.link{
         height: 100vh;
         border-top: 1px solid white;
         background-color: #5569DC;
-        top: 50px;
+        top: 53px;
         left: -100%;
         text-align: center;
-        transition: all .5s;
+        transition: all 0.5s;
         font-size: 25px;
     }
-    #checkList li{
+    ul li{
         margin: 4rem 0rem;
     }
     
