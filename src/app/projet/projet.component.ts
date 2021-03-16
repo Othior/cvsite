@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { list_Projet, Projet } from '../Model/Projet';
+import { Projet } from '../Model/Projet';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { ServiceAllPageService } from '../service/service-all-page.service';
+import { ProjetService } from '../service/projetService/projet.service';
 
 @Component({
   selector: 'app-projet',
@@ -9,30 +11,16 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class ProjetComponent implements OnInit{
 
-  public title :string = 'projet';
-  public getOldUrl = JSON.parse(localStorage.getItem('routeOld'));
-
   constructor(
-    private route: ActivatedRoute,
-    private router: Router
+    private service: ServiceAllPageService,
+    private projetService: ProjetService
   ){
 
   }
   ngOnInit(): void {
-    
-    this.reloadPage();
+    this.service.reloadPage();
   }
-  reloadPage(){
-    if(this.router.url === JSON.parse(localStorage.getItem('routeOld'))){
-      console.log("coucou")
-    }else{
-      console.log('non');
-      localStorage.setItem('routeOld',JSON.stringify(this.router.url));
-      location.reload();
-    }
-    console.log(this.router.url);
-    console.log('routeold => ',JSON.parse(localStorage.getItem('routeOld')));
-  }
-  projet : Array<Projet> = list_Projet;
+  
+  projet : Array<Projet> = this.projetService.list_Projet;
 
 }

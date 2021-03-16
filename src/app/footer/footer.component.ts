@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
-import { element, Personne } from '../Model/Personne';
-import { ElementImageContent, list_reseaux } from '../Model/Competence';
+import { Personne } from '../Model/Personne';
+import { HomeService } from '../service/homeService/home.service';
+import { ElementImageContent } from '../Model/ElementImageContent';
 
 @Component({
   selector: 'Footer',
@@ -8,7 +9,14 @@ import { ElementImageContent, list_reseaux } from '../Model/Competence';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent  {
-personne : Personne = element;
-list_reseaux : Array<ElementImageContent> = list_reseaux;
+  constructor(
+    private service: HomeService
+    )
+  {
+  }
+
+personne : Personne = this.service.Personne;
+
+list_reseaux : Array<ElementImageContent> = this.service.list_reseaux;
 
 }

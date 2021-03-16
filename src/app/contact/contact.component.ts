@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { db, fire } from "../db/dbFire";
 import { NgForm } from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { ServiceAllPageService } from '../service/service-all-page.service';
 
 
 @Component({
@@ -16,21 +17,13 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private service: ServiceAllPageService
   ){
 
   }
   ngOnInit(): void {
-    if(this.router.url === JSON.parse(localStorage.getItem('routeOld'))){
-      console.log("coucou")
-    }else{
-      console.log('non');
-      localStorage.setItem('routeOld',JSON.stringify(this.router.url));
-      location.reload();
-      
-    }
-    console.log(this.router.url);
-    console.log('routeold => ',JSON.parse(localStorage.getItem('routeOld')));
+    this.service.reloadPage();
   }
 
   contact(f: NgForm) {

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { element } from "../Model/Personne";
-import { Formation ,list_etudes , list_experiences } from "../Model/Formation";
-import {ElementImageContent ,list_backend , list_frontend , list_langageDb , list_reseaux } from '../Model/Competence';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Formation } from "../Model/Formation";
+import { ServiceAllPageService } from '../service/service-all-page.service';
+import { HomeService } from '../service/homeService/home.service';
+import { ElementImageContent } from '../Model/ElementImageContent';
 
 @Component({
   selector: 'Home',
@@ -16,33 +16,22 @@ export class HomeComponent implements OnInit {
   public getOldUrl = JSON.parse(localStorage.getItem('routeOld'));
 
   constructor(
-    private route: ActivatedRoute,
-    private router: Router
-    ){
-    }
+    private service: ServiceAllPageService,
+    private homeService: HomeService
+    ){}
 
   ngOnInit(): void {
+    this.service.reloadPage();
   }
   
-  reloadPage(): void {
-    if(this.router.url === JSON.parse(localStorage.getItem('routeOld'))){
-      console.log("coucou")
-    }else{
-      console.log('non');
-      localStorage.setItem('routeOld',JSON.stringify(this.router.url));
-      location.reload();
-    }
-    console.log('router home => ',this.router.url);
-    console.log('routeold => ',JSON.parse(localStorage.getItem('routeOld')));
-  }
+  personne = this.homeService.Personne;
   
-  personne = element;
-  list_reseau : Array<ElementImageContent> = list_reseaux;
-  list_backend : Array<ElementImageContent> = list_backend;
-  list_frontend : Array<ElementImageContent> = list_frontend;
-  list_langageDb : Array<ElementImageContent> = list_langageDb;
-  list_experiences : Array<Formation> = list_experiences;
-  list_etudes : Array<Formation> = list_etudes;
+  public list_reseau : Array<ElementImageContent> = this.homeService.list_reseaux;
+  public list_backend : Array<ElementImageContent> = this.homeService.list_backend;
+  public list_frontend : Array<ElementImageContent> = this.homeService.list_frontend;
+  public list_langageDb : Array<ElementImageContent> = this.homeService.list_langageDb;
+  public list_experiences : Array<Formation> = this.homeService.list_experiences;
+  public list_etudes : Array<Formation> = this.homeService.list_etudes;
 
 
 

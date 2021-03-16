@@ -8,15 +8,19 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class ServiceAllPageService {
 
   constructor(
-    private http: HttpClient,
-    private route: ActivatedRoute
+    private router: Router
   ) { }
 
-  setParams(value: string): void{
-    // let params = new HttpParams().set('')
-    this.route.params.subscribe(test => {
-      console.log(test);
-    })
+  reloadPage(){
+    if(this.router.url !== JSON.parse(localStorage.getItem('routeOld'))){
+      localStorage.setItem('routeOld',JSON.stringify(this.router.url));
+      location.reload();
+    }else if(this.router.url === JSON.parse(localStorage.getItem('routeOld')) ){
+      let check = document.querySelector("#checkList").classList;
+      check.remove('active');
+      console.log(check)
+      
+    }
   }
 
 }

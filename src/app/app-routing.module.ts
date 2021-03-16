@@ -6,7 +6,6 @@ import { ContactComponent } from '../app/contact/contact.component';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 
 const routes: Routes = [
-  
   {
     path:"",
     redirectTo:"acceuil",

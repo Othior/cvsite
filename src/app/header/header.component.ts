@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceAllPageService } from '../service/service-all-page.service';
 
 @Component({
   selector: 'NavBar',
@@ -7,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent{
 
+
   private isClicked: boolean = false;
 
   constructor() {
   }
-
+  
   navbarBtn(){
     this.isClicked = !this.isClicked;
     let check = document.querySelector("#checkList").classList;
