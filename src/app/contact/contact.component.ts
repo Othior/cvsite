@@ -27,18 +27,27 @@ export class ContactComponent implements OnInit {
   }
 
   contact(f: NgForm) {
-    db.collection("contact").doc(f.value.objetMessage).set({
+
+    console.log('formulaire value => ',f.form.value);
+    if(f.form.value.nom === '' && f.form.value.email === '' && f.form.value.objetMessage === '' && f.form.value.message === ''){
+      alert("Vous n'avez pas remplis tout les champs ");
+    }else{
+      db.collection("contact").doc(f.value.objetMessage).set({
       nom: f.value.nom,
       email: f.value.email,
       objetMessage: f.value.objetMessage,
       message: f.value.message
     })
     .then(function () {
-      console.log("Document successfully written!");
+      alert('Nous vous remercions de votre message');
+      setTimeout(()=>{
+        window.location.reload();
+      },2000)
     })
     .catch(function (error) {
       console.log("Error writing document: ", error);
     })
+    }
   }
 
 }
