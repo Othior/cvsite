@@ -1,34 +1,61 @@
+.container,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    margin-top: 4rem;
+}
 h1{
-    text-align: center;
-    padding: 1rem;
+    /* margin-top: 2rem; */
+    padding: 2rem 0rem;
 }
 form{
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    width: 50%;
-    /* box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19); */
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.212);
-    text-align: center;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    
-    border-radius: 1rem;
+    margin: 2rem 0rem;
 }
-label{
+form label{
     text-align: left;
-    padding: 1rem 0rem;
+    font-size: 25px;
+}
+form span{
+    position: relative;
+}
+form span i{
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    font-size: 25px;
+}
+input{
+    width: 60vw;
+    height: 3rem;
+    padding: 2rem 2rem 2rem 2rem;
+    outline: none;
+    background-color: #EDF0FC;
+    border: none;
+    font-size: 25px;
+    margin: 1rem 0rem;
 }
 textarea{
-    resize: none;
-}
-.btn-submit{
-    background-color: #5569DC;
-    padding: 1rem;
-    width: 25%;
-    margin: auto;
-    margin-top: 1rem;
+    margin: 1rem 0rem;
+    resize:vertical;
+    outline: none;
+    background-color: #EDF0FC;
+    font-size: 25px;
     border: none;
-    color: white;
+    width: 60vw;
+    padding: 1rem 1rem 1rem 2rem;
 }
+button{
+    margin:1rem 0rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: #5569DC;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+

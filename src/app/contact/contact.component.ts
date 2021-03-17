@@ -29,7 +29,6 @@ export class ContactComponent implements OnInit {
   contact(f: NgForm) {
     db.collection("contact").doc(f.value.objetMessage).set({
       nom: f.value.nom,
-      prenom: f.value.prenom,
       email: f.value.email,
       objetMessage: f.value.objetMessage,
       message: f.value.message

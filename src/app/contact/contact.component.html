@@ -1,40 +1,58 @@
-<h1>Contact</h1>
-
-<form #f ="ngForm" (ngSubmit)="contact(f)" novalidate>
-        
-            <label>Nom </label>
-            <input 
-            type="text" 
-            name="nom"
-            ngModel 
-            required
-            />
-            <label>Prenom </label>
-            <input 
-            type="text" 
-            name="prenom" 
-            ngModel 
-            required/>
-            <label>Email </label>
-            <input 
-            type="email" 
-            name="email" 
-            ngModel 
-            required/>
-            <label>Objet Message </label>
-            <input 
-            type="text"  
-            name="objetMessage"  
-            ngModel
-            required/>
-            <label>Votre Message </label><br>
-            <textarea 
-            name="message" 
-            ngModel
-            cols="30" 
-            rows="10">
-            </textarea>
-            <input class="btn-submit" 
-            type="submit" 
-            value="Contact me"/>
-</form>
+<div class="container">
+    <h1>Contact</h1>
+    
+    <form #f ="ngForm" (ngSubmit)="contact(f)" novalidate>
+            
+                <!-- <span>
+                    <i class="fas fa-user"></i> 
+                </span> -->
+                    <input 
+                        type="text" 
+                        name="nom"
+                        placeholder="Votre Nom"
+                        ngModel 
+                        required
+                    />
+                    
+                <!-- <span>
+                    <i class="fas fa-at"></i>
+                </span> -->
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Votre Email"
+                        ngModel 
+                        required
+                    />
+                    
+                <!-- <span>
+                    <i class="fas fa-ticket-alt"></i>
+                </span> -->
+                    <input 
+                        type="text"  
+                        name="objetMessage"
+                        placeholder="Objet Du Message"  
+                        ngModel
+                        required
+                    />
+                    
+                <!-- <span>
+                    <i class="fas fa-envelope"></i>
+                </span> -->
+                <textarea 
+                    name="message" 
+                    placeholder="Message"
+                    ngModel
+                    cols="30" 
+                    rows="10"
+                >
+                </textarea>
+                
+                <button 
+                    class="btn-submit" 
+                    type="submit"
+                >
+                    Contact me
+                </button>
+    </form>
+</div>
