@@ -32,7 +32,9 @@ a{
 nav > ul > li > a:hover {
     color: grey;
 }
-
+.link:hover{
+    color: black;
+}
 .active {
     z-index: 10;
 }
