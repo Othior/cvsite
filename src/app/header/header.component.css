@@ -79,8 +79,6 @@ ul li ,.link{
         margin: 4rem 0rem;
     }
 }
-
-
 @media screen and (min-width: 200px) and (max-width: 640px){
     .burger{
         display: block;

@@ -18,7 +18,7 @@
   align-items: center;
   flex-direction: row;
   margin: 2rem 0rem;
-  width: 60vw;
+  width: 80vw;
   padding: 2rem;
   background-color: #EDF0FC;
   text-align: right;
@@ -42,6 +42,7 @@
   /* grid-column: 3/4; */
   text-align: justify;
   margin-bottom: 2rem;
+  font-size: 22px;
 
 }
 .content a{
@@ -69,25 +70,25 @@
   text-align: left;
   background-color: blue;
 }
-.content p {
-  /* width: 50vw; */
-  font-size: 30px;
-}
 
 @media screen and (min-width:1000px) and (max-width:1400px){
   .projet_block{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
+    width: 80vw;
   }
   .projet_block h2{
     text-align: center;
   }
   .projet_block:nth-of-type(2n){
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
+  }
+  .content  {
+    width: 55vw;
   }
 }
 @media screen and (min-width:600px) and (max-width:1000px){
@@ -97,6 +98,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 80vw;
   }
   .projet_block h2{
     text-align: center;
@@ -104,6 +106,9 @@
   .projet_block:nth-of-type(2n){
     flex-direction: column;
     text-align: center;
+  }
+  .projet_block p {
+    width: 55vw;
   }
 }
 @media screen and (min-width:300px) and (max-width:600px){
@@ -113,6 +118,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 80vw;
   }
   .projet_block h2{
     text-align: center;
