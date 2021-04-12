@@ -15,31 +15,31 @@ export class ProjetService {
       nom: "the Cafe" ,
       image: this.url_image + "cafe_projet.png",
       lien: "https://coffee-web-site.vercel.app/",
-      description:' le projet "the Cafe" est un site web déjà créé de toute pièce sur le site w3schools qui fournissent des templates a refaire '
+      description:' le projet "the Cafe" est un site web déjà créé de toute pièce sur le site w3schools qui fournit des templates à refaire '
   },
   {
       nom: "Beacons hunt" ,
       image: this.url_image + "Beaconshunt_projet.png",
       lien: "https://beacons-hazel.vercel.app/",
-      description:'le projet Beacons hunt est un site web ou l\'on peut crée des parcours , faire les parcours déjà créés , le but est de reprendre les balises sur la carte afin de finir le parcours'
+      description:'le projet Beacons hunt est un site web où l\'on peut crée des parcours et faire les parcours déjà créés . Le but est de reprendre les balises sur la carte afin de finir le parcours'
   },
   {
       nom: "React Crypto" ,
       image: this.url_image + "react_crypto_projet.png",
       lien: "https://react-crypto-nu.vercel.app/",
-      description:'projet de formation récupéré des données d\'une api et crée un recheche par nom '
+      description:'projet de formation récupéré des données d\'une api et crée une recheche par nom '
   },
   {
       nom: "Jeux des paires" ,
       image: this.url_image + "jeux_des_paires_projet.png",
       lien: "https://jeux-des-paires.vercel.app/",
-      description:' projet de formation le site est un jeu de societe ou l\'on doit chercher la meme carte '
+      description:' projet de formation le site est un jeu de société où l\'on doit chercher 2 cartes identiques '
   },
   {
       nom: "Projet Cepegra" ,
       image: this.url_image + "cepegra_projet.png",
       lien: "https://tes-three.vercel.app/",
-      description:'projet de formation , le site consiste a crée un systeme d\'enregistrement ou de pointage, les nouvelles personnes peuvent s\'incrire mais aussi pointer et quand vient le temps de finir la journée la personne doit encore pointer en retour . le systeme d\'enregistrement nous donne un qrcode , grace a se qrcode nous pouvons pointer Entré/Sortie'
+      description:'projet de formation , le site consiste à créer un système d\'enregistrement ou de pointage, les nouvelles personnes peuvent s\'inscrire mais aussi pointer. A la fin de la journée , la personne doit pointer sa sortie . le système d\'enregistrement nous donne un qrcode , grâce à ce qrcode nous pouvons pointer Entrée/Sortie'
   },
   {
       nom: "Paymarv" ,

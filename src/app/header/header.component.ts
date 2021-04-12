@@ -22,8 +22,8 @@ export class HeaderComponent{
 
   list_navbar: Array<Navbar> =  [
     {
-      items: "Acceuil",
-      link: "acceuil"
+      items: "Accueil",
+      link: "accueil"
     },
     {
       items: "Projet",

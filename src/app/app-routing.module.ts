@@ -8,11 +8,11 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 const routes: Routes = [
   {
     path:"",
-    redirectTo:"acceuil",
+    redirectTo:"accueil",
     pathMatch:'full'
   },
   {
-    path:"acceuil",
+    path:"accueil",
     component : HomeComponent
   },
   {

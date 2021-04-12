@@ -92,7 +92,7 @@ export class HomeService {
     },
     {
         date: " 09/2020- 10/2020 ",
-        intituler: " Développeur Front-end ReactJs / Vuejs - Projet Beacons hunt est site web ou l'on peut crée des parcours et faire des parcours de balade"
+        intituler: " Développeur Front-end ReactJs / Vuejs - Projet Beacons hunt est un site web où l'on peut créer des parcours et faire des parcours de balade"
     },
     {
         date: " 11/2019- 12/2019 ",
@@ -100,7 +100,7 @@ export class HomeService {
     },
     {
         date: " 11/2018 - 12/2018 ",
-        intituler: " Playzone Technobel  - Potapi c'est potager connectée"
+        intituler: " Playzone Technobel  - Potapi est un potager connecté"
     },
     {
         date: " 09/2017 - 05/2018 ",
