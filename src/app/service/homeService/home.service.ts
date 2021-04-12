@@ -144,7 +144,7 @@ export class HomeService {
     Nom : "Splingaire",
     Prenom : "Marvyn",
     Adresse : "Wallonie / Namur / Spy",
-    Role : "Développeur Front end",
+    Role : "Développeur Full Stack",
     Mail : "splingaire.marvyn@gmail.com",
     Tel : "+32 496/21.32.75"
 }
