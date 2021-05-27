@@ -15,11 +15,11 @@ export class HomeService {
   public list_backend : Array<ElementImageContent> = [
     {
         image: this.url_image + "c.svg",
-        content: " C# ( ASP/NET) "
+        content: " C# "
     },
     {
         image: this.url_image + "java.svg",
-        content: " Java (Spring boot) "
+        content: " Java"
     },
     {
         image: this.url_image + "node.svg",
@@ -27,11 +27,11 @@ export class HomeService {
     },
     {
         image: this.url_image + "python.svg",
-        content: " Python (Tkinter) "
+        content: " Python "
     },
     {
         image: this.url_image + "php.svg",
-        content: " PHP (Symfony)"
+        content: " PHP"
     }
 ];
 
