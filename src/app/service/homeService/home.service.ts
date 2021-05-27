@@ -14,46 +14,46 @@ export class HomeService {
 
   public list_backend : Array<ElementImageContent> = [
     {
-        image: this.url_image + "c.png",
+        image: this.url_image + "c.svg",
         content: " C# ( ASP/NET) "
     },
     {
-        image: this.url_image + "java.png",
+        image: this.url_image + "java.svg",
         content: " Java (Spring boot) "
     },
     {
-        image: this.url_image + "Node.js.png",
+        image: this.url_image + "node.svg",
         content: " NodeJs "
     },
     {
-        image: this.url_image + "python.png",
+        image: this.url_image + "python.svg",
         content: " Python (Tkinter) "
     },
     {
-        image: this.url_image + "PHP.png",
+        image: this.url_image + "php.svg",
         content: " PHP (Symfony)"
     }
 ];
 
   public list_frontend : Array<ElementImageContent> = [
     {
-        image: this.url_image + "angular.png",
+        image: this.url_image + "angular.svg",
         content: " Angular "
     },
     {
-        image: this.url_image + "React.png",
+        image: this.url_image + "react.svg",
         content: " Reactjs "
     },
     {
-        image: this.url_image + "vueJs.png",
+        image: this.url_image + "vue.svg",
         content: " Vuejs "
     },
     {
-        image: this.url_image + "bootstrap.png",
+        image: this.url_image + "bootstrap.svg",
         content: " Bootstrap 4 "
     },
     {
-        image: this.url_image + "HTML5.png ",
+        image: this.url_image + "html.svg ",
         content: " HTML / CSS "
     }
 ];
@@ -71,15 +71,15 @@ export class HomeService {
 
   public list_langageDb: Array<ElementImageContent> = [
     {
-        image: this.url_image + "MySQL.png" ,
+        image: this.url_image + "db.svg" ,
         content: " MySQL "
     },
     {
-        image: this.url_image + "tsql.png" ,
+        image: this.url_image + "db.svg" ,
         content: " T-SQL "
     },
     {
-        image: this.url_image + "NOSQL.png" ,
+        image: this.url_image + "db.svg" ,
         content: " NOSQL "
     }
 ]

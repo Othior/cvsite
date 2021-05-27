@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 import { HomeService } from './service/homeService/home.service';
 import { from } from 'rxjs';
+import { CompetencesComponent } from './competences/competences.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { from } from 'rxjs';
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponentComponent,
+    CompetencesComponent,
     
   ],
   imports: [

@@ -183,7 +183,7 @@ a{
 }
 
 /* ------------------------------------------------------------ grid test ---------------------------------------------------------------------*/
-.parcours , .competences {
+.parcours {
     display: grid;
     grid-template-columns: 20% 1fr 1fr 20%;
 }
@@ -261,7 +261,7 @@ a{
     width: 25rem;
 }
 
-.backend > p , .langage_db > p , .frontend > p  , .methodo > p {
+/* .backend > p , .langage_db > p , .frontend > p  , .methodo > p {
     margin: 0;
     margin-left: 1rem;
     font-size: 25px;
@@ -287,19 +287,66 @@ a{
 }
 .langage_db:nth-last-child(2) > p{
     margin-top: 1rem;
-}
+} */
 /* ------------------------------------------------------------------------ */
 /* ----------------------------- Competences ------------------------------ */
 .competences{
-    grid-template-rows: 5rem  5rem 1fr 5rem 1fr;
-    /* grid-gap: 10px; */
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 20% 1fr 20%;
 }
 .title_competence{
     grid-row: 0;
     grid-column: 2/3;
     font-size: 35px;
 }
-.blockBackend{
+.contenu_competences{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.backend , .frontend , .langage_db{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    
+}
+.block_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDF0FC;
+    border-radius: 50%;
+    object-fit: contain;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    transition: 0.8s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.backend img , .frontend img , .langage_db img {
+    /* object-fit: contain; */
+    width: 3rem;
+    height: 3rem;
+    padding: 0.2rem;
+}
+.block_image:hover {
+    background: #5569DC;
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 1s;
+}
+.backend p ,.frontend p ,.langage_db p {
+    margin: 1rem 0;
+    color: black;
+    text-transform: uppercase;
+}
+/* .blockBackend{
     grid-row: 2/4;
     grid-column: 2/3;
 }
@@ -332,7 +379,7 @@ a{
 }
 .title_langagedb{
     margin-top: 3rem;
-}
+} */
 /* ------------------------------------------------------------------------ */
 
 @media screen and (min-width:1000px) and (max-width:1400px){

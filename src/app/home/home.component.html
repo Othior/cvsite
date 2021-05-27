@@ -69,27 +69,35 @@
 </div>
 <div class="competences">
     <h2 class="title_competence">Compétences</h2>
-    <div class="blockBackend">
-        <h2>Backend</h2>
+    <div class="contenu_competences" >
         <div class="backend" *ngFor="let back of list_backend">
-            <img src="{{ back.image }}" alt="{{back.image}}">
+            <div class="block_image">
+                <img src="{{ back.image }}" alt="{{back.image}}">
+            </div>
             <p>{{ back.content }}</p>
         </div>
-    </div>
-    <div class="blockFrontend">
-        <h2 class="title_frontend">Frontend</h2>
         <div class="frontend" *ngFor="let front of list_frontend"> 
-            <img src="{{front.image}}" alt="{{front.image}}">
+            <div class="block_image">
+                <img src="{{front.image}}" alt="{{front.image}}">
+            </div>
             <p>{{ front.content }}</p>
         </div>
-    </div>
-    <div class="blockDb">
-        <h2 class="title_langagedb">Langage DB</h2>
         <div class="langage_db" *ngFor="let langage of list_langageDb">
-            <img src="{{langage.image}}" alt="{{langage.image}}">
+            <div class="block_image">
+                <img src="{{langage.image}}" alt="{{langage.image}}">
+            </div>
             <p>{{ langage.content }}</p>
         </div>
     </div>
+    <!-- <div class="blockBackend">
+        <h2>Backend</h2>
+    </div>
+    <div class="blockFrontend">
+        <h2 class="title_frontend">Frontend</h2>
+    </div> -->
+    <!-- <div class="blockDb">
+        <h2 class="title_langagedb">Langage DB</h2>
+    </div> -->
     <!-- <div class="content_competence">
             
     </div> -->
