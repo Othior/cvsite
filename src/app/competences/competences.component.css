@@ -1,0 +1,36 @@
+.competence_content_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    
+}
+.block_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDF0FC;
+    border-radius: 50%;
+    object-fit: contain;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    transition: 0.8s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.competence_content_block img {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.2rem;
+}
+.block_image:hover {
+    background: #5569DC;
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 1s;
+}
+.competence_content_block p  {
+    margin: 1rem 0;
+    color: black;
+    text-transform: uppercase;
+}

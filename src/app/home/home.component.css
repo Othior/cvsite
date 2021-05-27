@@ -311,7 +311,8 @@ a{
 }
 .backend , .frontend , .langage_db{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     align-items: center;
     margin: 2rem;
     
@@ -330,7 +331,6 @@ a{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .backend img , .frontend img , .langage_db img {
-    /* object-fit: contain; */
     width: 3rem;
     height: 3rem;
     padding: 0.2rem;
