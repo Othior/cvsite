@@ -50,8 +50,8 @@ export class HomeService {
     },
     {
         image: this.url_image + "bootstrap.svg",
-        content: " Bootstrap 4 "
-    },
+        content: "Bootstrap"
+     },
     {
         image: this.url_image + "html.svg ",
         content: " HTML / CSS "

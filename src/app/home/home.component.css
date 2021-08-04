@@ -388,7 +388,7 @@ a{
         text-align: justify;
     }
 }
-@media screen and (min-width:640px) and (max-width:1000px){
+@media screen and (min-width:850px) and (max-width:1000px){
     .contenu{
         display: flex;
         flex-direction: column;
@@ -428,6 +428,72 @@ a{
     }
 }
 
+@media screen and (min-width:640px) and (max-width:850px){
+    .contenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fonction_adresse{
+        text-align: center;
+        justify-content: none;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .reseau_sociaux{
+        margin-bottom: 2rem;
+    }
+    .formation_etude , .competences{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title_competence{
+        margin: 1rem 0rem 3rem 0rem;
+        text-align: start;
+    }
+    .title_frontend{
+        margin: 3rem 0rem 0rem 0rem;
+    }
+    .blockDb{
+        margin: 0rem 0rem 3rem 0rem;
+    }
+    .parcours > h2{
+        font-size: 27px;
+    }
+    .description{
+        word-spacing: 0.7px;
+    }
+    .competences{
+        display: grid;
+        margin-top: 1rem;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 5rem 1fr ;
+        justify-items: center;
+    }
+    .contenu_competences{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0;
+    }
+    .title_competence{
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .competence_content_block{
+        margin: 0.5rem;
+    }
+    .competences .backend,.competences .frontend , .competences .langage_db{
+        width: 100%;
+        margin: 0;
+    }
+    .competence_content_block p{
+        color:yellow;
+    }
+}
 @media screen and (min-width: 200px) and (max-width: 640px){
     .contenu{
         display: flex;
@@ -508,6 +574,66 @@ a{
         letter-spacing: 0.5px;
         text-align: justify;
     }
+    /* .contenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fonction_adresse{
+        text-align: center;
+        justify-content: none;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .reseau_sociaux{
+        margin-bottom: 2rem;
+    }
+    .formation_etude , .competences{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title_competence{
+        margin: 1rem 0rem 3rem 0rem;
+        text-align: start;
+    }
+    .title_frontend{
+        margin: 3rem 0rem 0rem 0rem;
+    }
+    .blockDb{
+        margin: 0rem 0rem 3rem 0rem;
+    }
+    .parcours > h2{
+        font-size: 27px;
+    }
+    .description{
+        word-spacing: 0.7px;
+    }
+    .competences{
+        display: grid;
+        margin-top: 1rem;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 5rem 1fr ;
+        justify-items: center;
+    }
+    .contenu_competences{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0;
+    }
+    .title_competence{
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .competence_content_block{
+        margin: 0.5rem;
+    }
+    .competences .backend,.competences .frontend , .competences .langage_db{
+        width: 100%;
+    } */
 }
 
 
