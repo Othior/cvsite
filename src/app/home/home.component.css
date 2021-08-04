@@ -493,6 +493,9 @@ a{
     .competence_content_block p{
         color:yellow;
     }
+    .frontend , .backend , .langage_db{
+        justify-content: center;
+    }
 }
 @media screen and (min-width: 200px) and (max-width: 640px){
     .contenu{
@@ -633,6 +636,9 @@ a{
     }
     .competences .backend,.competences .frontend , .competences .langage_db{
         width: 100%;
+    }
+    .frontend , .backend , .langage_db{
+        justify-content: center;
     }
 }
 
