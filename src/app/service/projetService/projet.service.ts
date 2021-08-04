@@ -47,6 +47,12 @@ export class ProjetService {
       lien: "https://pay-marv.vercel.app/",
       description:'Ce projet est ma création personnelle , nous pouvons nous enregistrer et par après nous pouvons ajouter nos objets à payer ou choses à faire et pour finir enregistrer nos url importants '
   },
+  {
+    nom: "Ssyncronime" ,
+    image: this.url_image + "paymarv_projet.png",
+    lien: "https://ssyncronime.vercel.app/accueil",
+    description:'Ce projet est le site web d\'une cliente. C\'est un site vitrine pour l\'entreprise de la personne ainsi que décrire ce qu\'est l\'hypnose   '
+  }
 
 ];
 
