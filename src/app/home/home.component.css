@@ -574,7 +574,7 @@ a{
         letter-spacing: 0.5px;
         text-align: justify;
     }
-    /* .contenu{
+    .contenu{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -614,8 +614,8 @@ a{
     .competences{
         display: grid;
         margin-top: 1rem;
-        grid-template-columns: 20% 1fr 20%;
-        grid-template-rows: 5rem 1fr ;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 5rem 1fr;
         justify-items: center;
     }
     .contenu_competences{
@@ -633,7 +633,7 @@ a{
     }
     .competences .backend,.competences .frontend , .competences .langage_db{
         width: 100%;
-    } */
+    }
 }
 
 
