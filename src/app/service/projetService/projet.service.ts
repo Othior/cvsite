@@ -43,16 +43,42 @@ export class ProjetService {
   },
   {
       nom: "Paymarv" ,
-      image: this.url_image + "paymarv_projet.png",
+      image: this.url_image + "paymarv.png",
       lien: "https://pay-marv.vercel.app/",
       description:'Ce projet est ma création personnelle , nous pouvons nous enregistrer et par après nous pouvons ajouter nos objets à payer ou choses à faire et pour finir enregistrer nos url importants '
   },
   {
     nom: "Ssyncronime" ,
-    image: this.url_image + "paymarv_projet.png",
+    image: this.url_image + "ssyncronime.png",
     lien: "https://ssyncronime.vercel.app/accueil",
     description:'Ce projet est le site web d\'une cliente. C\'est un site vitrine pour l\'entreprise de la personne ainsi que décrire ce qu\'est l\'hypnose   '
+  },
+  {
+    nom: "shopMarv" ,
+    image: this.url_image + "shopMarv.png",
+    lien: "https://shop-marv.vercel.app/",
+    description:'Ce projet est un site de vente de roller ainsi que d\' accessoire (en travaux)'
+  },
+  {
+    nom: "linkWeb" ,
+    image: this.url_image + "linkWeb.png",
+    lien: "https://link-web.vercel.app/",
+    description:'Ce projet est un site regroupant plusieurs site dans mes favoris'
+  },
+  {
+    nom: "movieWatch" ,
+    image: this.url_image + "movieWatchpng.png",
+    lien: "https://movie-watch.vercel.app/",
+    description:'Ce projet est un site regroupant plusieurs films ou séries que je dois regarder par le futur je compte bien appronfondir mes idées , chaque personne puisse créé leurs playlist perso'
   }
+  ,
+  {
+    nom: "drag and drop" ,
+    image: this.url_image + "dragDrop.png",
+    lien: "https://drag-drop-ochre.vercel.app/",
+    description:'Ce projet avait pour but de montrer à un client l\'avancement d\'une fonctionnalité (projet music) '
+  }
+
 
 ];
 
